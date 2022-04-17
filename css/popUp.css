@@ -1,0 +1,142 @@
+.pop-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(39, 49, 66, 0.5);
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	transition: .25s opacity, .25s visibility;
+}
+.pop-overlay.__active {
+	opacity: 1;
+	visibility: visible;
+}
+.pop-overlay__inner {
+	display: -ms-flexbox;
+	display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.popUp {
+	width: 330px;
+	max-width: 94%;
+	overflow: auto;
+	background-color: #fff;
+	max-height: 95vh;
+	visibility: hidden;
+	position: absolute;
+	opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+	transition: .25s visibility, .25s opacity, .25s transform;
+    box-shadow: 0px 0px 4px #CDCDCD;
+    border-radius: 4px;
+}
+.popUp.__active {
+	position: static;
+	visibility: visible;
+	opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.popUp__form {
+    padding: 20px;
+}
+.popUp__btn {
+    margin-top: 19px;
+}
+.popUp__filed {
+    border: 0;
+    display: block;
+    margin-bottom: 10px;
+}
+.popUp__filed label {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.popUp__filed input {
+    display: block;
+    width: 100%;
+    border: 1px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.popUp__top {
+    display: -ms-flexbox;
+    display: flex;
+}
+.popUp__topItem {
+    width: 50%;
+}
+.popUp__topItem:first-child .popUp__nameBtn {
+    border-radius: 4px 0 4px 0;
+}
+.popUp__topItem:last-child .popUp__nameBtn {
+    border-radius: 0px 4px 0 4px;
+}
+.popUp__nameBtn {
+    border: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #626262;
+    background-color: #D2D2D2;
+    box-shadow: inset 2px -2px 4px -1px #BBBBBB;
+}
+.popUp__nameBtn.active {
+    cursor: auto;
+    color: #0C729D;
+    background: #fff;
+    box-shadow: none;
+}
+.popUp__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+.popUp__person {
+    padding: 20px;
+}
+.roomBox__bottom {
+    margin-top: 20px;
+}
+.roomBox__flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin: -10px -5px 0;
+}
+.roomBox__btn {
+    padding: 10px 5px 0;
+}
+.popUp__label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}

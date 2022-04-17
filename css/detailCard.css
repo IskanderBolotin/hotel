@@ -1,0 +1,215 @@
+.detailCard {
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #CDCDCD;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.detailCard__inner {
+    display: -ms-flexbox;
+    display: flex;
+}
+.detailCard__view {
+    width: 69%;
+}
+.detailCard__info {
+    width: 31%;
+    padding-left: 20px;
+}
+.imagePrview {
+    border-radius: 4px;
+    overflow: hidden;
+}
+.imagePrview__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.imagePrview__item {
+    height: 100%;
+}
+.imagePrview__big {
+    width: 60%;
+}
+.imagePrview__mid {
+    width: 50%;
+}
+.imagePrview__small {
+    width: 40%;
+}
+.imagePrview__link {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.imagePrview__link img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.detailCard__name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 35px;
+    padding-right: 54px;
+    padding-top: 15px;
+}
+.detailCard__name.detailCard__name-small {
+    margin-bottom: 10px;
+    padding: 0;
+}
+.detailChar {
+    list-style: none;
+}
+.detailChar:not(:last-child) {
+    margin-bottom: 20px;
+}
+.detailChar__item {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 7px;
+}
+.detailChar__item:last-child {
+    margin-bottom: 7px;
+}
+.detailCardInfo {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+.detailBtn {
+    margin-top: auto;
+}
+.detailCount {
+    position: absolute;
+    background: #94B64C;
+    border-radius: 0px 4px;
+    top: 0;
+    right: 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    padding: 7px 5px;
+    width: 54px;
+    text-align: center;
+}
+.detailCardInfo__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #0C729D;
+    margin-bottom: 10px;
+}
+.detailCardInfo__price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #0C729D;
+}
+.detailSmall {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.detailSmall__img {
+    margin-right: 20px;
+    width: 110px;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 75px;
+}
+.detailSmall__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.detailSmall__Char {
+    width: calc(100% - 130px);
+}
+.checkList {
+    list-style: none;
+    width: 100%;
+    -webkit-column-count: 3;
+            column-count: 3;
+    max-height: 62px;
+    margin: 0 -5px;
+}
+.checkList__item {
+    display: block;
+    margin-bottom: 4px;
+    padding: 0 5px;
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+}
+.checkBtn {
+    border: 0;
+    text-align: left;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    color: #0c729d;
+}
+.mini-map {
+    height: 240px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.mini-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 991px) {
+	.checkList {
+        max-height: none;
+    }
+    .detailCard__name {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .detailCard__inner {
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    .detailCard__view,
+    .detailCard__info {
+        padding: 0;
+        width: 100%;
+    }
+    .detailCard__view {
+        margin-bottom: 10px;
+    }
+    .detailChar:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .checkList {
+        -webkit-column-count: 1;
+                column-count: 1;
+    }
+    .detailSmall__img {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .detailSmall__Char {
+        width: 100%;
+    }
+}
